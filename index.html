@@ -8,10 +8,16 @@
       name="description"
       content="Sellable helps real estate agents answer listing inquiries faster with AI phone coverage, buyer qualification, SMS follow-up, and showing coordination."
     />
-    <meta name="theme-color" content="#ffffff" />
+    <meta name="theme-color" content="#f7f7f4" />
     <meta name="robots" content="index,follow" />
     <link rel="canonical" href="https://elironb.github.io/" />
     <link rel="icon" href="./favicon.svg" type="image/svg+xml" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
     <meta property="og:type" content="website" />
     <meta property="og:title" content="Sellable on GitHub" />
     <meta
@@ -35,9 +41,7 @@
             "@type": "Organization",
             "name": "Sellable",
             "url": "https://sellabl.app",
-            "sameAs": [
-              "https://github.com/ElironB/ElironB.github.io"
-            ]
+            "sameAs": ["https://github.com/ElironB/ElironB.github.io"]
           },
           {
             "@type": "SoftwareApplication",
@@ -52,259 +56,308 @@
               "price": "499",
               "description": "Agent Pro monthly plan"
             }
-          },
-          {
-            "@type": "FAQPage",
-            "mainEntity": [
-              {
-                "@type": "Question",
-                "name": "What is Sellable?",
-                "acceptedAnswer": {
-                  "@type": "Answer",
-                  "text": "Sellable is an AI listing operations platform for real estate agents. It helps agents answer listing inquiries, qualify buyers, send follow-up texts, and coordinate availability in one workflow."
-                }
-              },
-              {
-                "@type": "Question",
-                "name": "Who is Sellable built for?",
-                "acceptedAnswer": {
-                  "@type": "Answer",
-                  "text": "Sellable is currently positioned for solo agents and small teams that want stronger response speed and cleaner follow-up around active listings."
-                }
-              },
-              {
-                "@type": "Question",
-                "name": "Does Sellable handle phone and text conversations?",
-                "acceptedAnswer": {
-                  "@type": "Answer",
-                  "text": "Yes. Sellable combines AI phone coverage, SMS follow-up, buyer qualification, and scheduling support so listing inquiries can be handled faster before the agent jumps in."
-                }
-              }
-            ]
           }
         ]
       }
     </script>
   </head>
   <body>
-    <div class="page-shell">
-      <header class="site-header">
-        <a class="brand" href="#top" aria-label="Sellable on GitHub home">
-          <img class="brand-logo" src="./sellable.png" alt="Sellable" width="42" height="42" />
-          <span class="brand-copy">
-            <strong>Sellable</strong>
-            <span>GitHub Pages</span>
-          </span>
-        </a>
-        <nav class="site-nav" aria-label="Primary">
-          <a href="#platform">Platform</a>
-          <a href="#workflow">Workflow</a>
-          <a href="#stack">Stack</a>
-          <a href="#faq">FAQ</a>
-        </nav>
-        <a class="ghost-link" href="https://sellabl.app" target="_blank" rel="noreferrer">Visit Sellable</a>
+    <div class="noise" aria-hidden="true"></div>
+
+    <div class="site-shell">
+      <header class="site-header reveal" data-reveal>
+        <div class="shell-frame header-frame">
+          <div class="shell-core header-core">
+            <a class="brand" href="#top" aria-label="Sellable on GitHub home">
+              <img class="brand-logo" src="./sellable.png" alt="Sellable" width="42" height="42" />
+              <span class="brand-wordmark">Sellable</span>
+            </a>
+
+            <nav class="site-nav" aria-label="Primary">
+              <a href="#overview">Overview</a>
+              <a href="#workflow">Workflow</a>
+              <a href="#stack">Stack</a>
+            </nav>
+
+            <a class="button button-secondary nav-cta" href="https://sellabl.app/agents" target="_blank" rel="noreferrer">
+              <span>Visit Sellable</span>
+              <span class="button-tail" aria-hidden="true">↗</span>
+            </a>
+          </div>
+        </div>
       </header>
 
       <main id="top">
         <section class="hero">
-          <div class="hero-copy">
-            <div class="hero-chip">Built for listing agents and lean teams</div>
-            <h1>
-              Stop losing listing leads to
-              <span class="headline-underline">slow follow-up.</span>
-            </h1>
-            <p class="hero-lede">
-              Sellable gives every listing instant phone coverage, fast buyer SMS follow-up, and one clean operating layer so your team stays on the hottest inquiries instead of chasing stale ones.
+          <div class="hero-copy reveal" data-reveal>
+            <span class="eyebrow">Sellable for listing agents</span>
+            <h1>Stop losing listing leads to slow follow-up.</h1>
+            <p class="hero-body">
+              Sellable gives every listing instant phone coverage, fast buyer qualification, and a cleaner operating layer so your team spends time on the right inquiries instead of reconstructing stale conversations.
             </p>
-            <div class="hero-badges">
-              <span class="hero-badge">Agent Pro for active listings</span>
-              <span class="hero-badge">Shared AI line included</span>
-              <span class="hero-badge">Brokerage rollout available</span>
-            </div>
+
             <div class="hero-actions">
-              <a class="primary-button" href="https://sellabl.app/agents" target="_blank" rel="noreferrer">
-                Start Agent Setup
+              <a class="button button-primary" href="https://sellabl.app/agents" target="_blank" rel="noreferrer">
+                <span>Start Agent Setup</span>
+                <span class="button-tail" aria-hidden="true">↗</span>
               </a>
-              <a class="secondary-button" href="https://github.com/ElironB/ElironB.github.io" target="_blank" rel="noreferrer">
-                View the Pages repo
+              <a class="button button-secondary" href="https://github.com/ElironB/ElironB.github.io" target="_blank" rel="noreferrer">
+                <span>View the Pages repo</span>
               </a>
             </div>
+
+            <ul class="hero-points" aria-label="Key Sellable highlights">
+              <li>24/7 AI phone coverage</li>
+              <li>Shared AI line included in Agent Pro</li>
+              <li>Brokerage rollout available when teams are ready</li>
+            </ul>
           </div>
 
-          <aside class="hero-panel" aria-label="Sellable highlights">
-            <div class="panel-card">
-              <span class="card-label">Current wedge</span>
-              <strong>Listing response operations for solo agents</strong>
-              <p>Phone, text, qualification, scheduling, and visibility around active listings.</p>
+          <div class="hero-side reveal" data-reveal>
+            <div class="shell-frame feature-frame feature-frame-large">
+              <div class="shell-core feature-core feature-intro">
+                <span class="eyebrow eyebrow-subtle">Current wedge</span>
+                <h2>Listing response operations for solo agents and lean teams.</h2>
+                <p>
+                  Sellable is designed for the first-response layer around active listings: phone, text, buyer qualification, scheduling coordination, and visibility that keeps the handoff clean.
+                </p>
+              </div>
             </div>
-            <div class="metric-grid">
-              <article class="metric-card">
-                <span class="metric-icon">24/7</span>
-                <span class="metric-label">AI phone coverage</span>
-              </article>
-              <article class="metric-card">
-                <span class="metric-icon">1</span>
-                <span class="metric-label">shared AI line in Agent Pro</span>
-              </article>
-              <article class="metric-card">
-                <span class="metric-icon">5</span>
-                <span class="metric-label">active listings included</span>
-              </article>
-              <article class="metric-card">
-                <span class="metric-icon">$29</span>
-                <span class="metric-label">optional dedicated listing line</span>
-              </article>
+
+            <div class="hero-bento">
+              <div class="shell-frame feature-frame">
+                <div class="shell-core feature-core">
+                  <p class="feature-kicker">Always on</p>
+                  <h3>Answer calls and texts without leaving buyers waiting.</h3>
+                </div>
+              </div>
+
+              <div class="shell-frame feature-frame">
+                <div class="shell-core feature-core">
+                  <p class="feature-kicker">Cleaner qualification</p>
+                  <h3>Capture context early so agents step in with signal, not guesswork.</h3>
+                </div>
+              </div>
+
+              <div class="shell-frame feature-frame feature-frame-wide">
+                <div class="shell-core feature-core feature-meta">
+                  <p class="feature-kicker">Agent Pro</p>
+                  <p>
+                    One shared AI line and up to five active listings are included. Dedicated listing numbers are optional at <strong>$29/mo</strong> when cleaner routing or tracking matters.
+                  </p>
+                </div>
+              </div>
             </div>
-          </aside>
+          </div>
         </section>
 
-        <section class="section" id="platform">
-          <div class="section-heading">
-            <div>
-              <p class="eyebrow">Who It Helps</p>
+        <section class="section" id="overview">
+          <div class="section-heading reveal" data-reveal>
+            <span class="eyebrow">Who It Helps</span>
+            <div class="section-copy">
               <h2>Fast first response changes how every listing performs.</h2>
-            </div>
-            <div class="section-callout">
-              <p class="callout-kicker">What changes</p>
-              <p>You stop treating inbound listing response like random inbox firefighting.</p>
-            </div>
-          </div>
-          <div class="feature-grid">
-            <article class="feature-card">
-              <span class="feature-index">Solo listing agent</span>
-              <h3>Run tighter follow-up without living inside your phone.</h3>
-              <p>Let Sellable catch the first call, answer the routine questions, and keep momentum alive while you stay focused on pricing, showings, and offers.</p>
-            </article>
-            <article class="feature-card">
-              <span class="feature-index">Small team</span>
-              <h3>Cover nights, weekends, and overflow leads.</h3>
-              <p>Keep every listing from going quiet when one agent is busy, in a showing, or just offline for a few hours.</p>
-            </article>
-            <article class="feature-card">
-              <span class="feature-index">Brokerage rollout</span>
-              <h3>Start with a contact-led rollout instead of fake seat billing.</h3>
-              <p>Use the brokerage path when you want help scoping volume, workflows, and the right way to roll Sellable out across the office.</p>
-            </article>
-            <article class="feature-card">
-              <span class="feature-index">The shift</span>
-              <h3>Calls get answered, buyers get screened, and the next step gets clearer before the lead goes cold.</h3>
-              <p>That is the real product move. Faster response is not a vanity metric here. It changes how every listing performs.</p>
-            </article>
-          </div>
-        </section>
-
-        <section class="section workflow-section" id="workflow">
-          <div class="section-heading narrow">
-            <p class="eyebrow">How it works</p>
-            <h2>From inbound listing lead to booked next step in four clear moves.</h2>
-          </div>
-          <div class="workflow-rail">
-            <article class="workflow-step">
-              <span>Step 1</span>
-              <h3>Launch one listing into Sellable</h3>
-              <p>Set up the listing, tighten the copy, and get the buyer-facing number ready without rebuilding your entire workflow from scratch.</p>
-            </article>
-            <article class="workflow-step">
-              <span>Step 2</span>
-              <h3>Start with the shared line</h3>
-              <p>Use the included shared AI line across listings first, then add a dedicated number only on the listings where cleaner routing or tracking matters most.</p>
-            </article>
-            <article class="workflow-step">
-              <span>Step 3</span>
-              <h3>Answer, qualify, and keep momentum moving</h3>
-              <p>Sellable handles the immediate back-and-forth, gathers context, and keeps the serious buyers engaged instead of letting the lead stall out.</p>
-            </article>
-            <article class="workflow-step">
-              <span>Step 4</span>
-              <h3>Step in strong</h3>
-              <p>You focus on showings, decisions, and closers with context already captured instead of scrambling to reconstruct the conversation.</p>
-            </article>
-          </div>
-        </section>
-
-        <section class="section stack-section" id="stack">
-          <div class="section-heading">
-            <p class="eyebrow">Technical footprint</p>
-            <h2>The public product and the engineering story live together.</h2>
-          </div>
-          <div class="stack-layout">
-            <article class="stack-copy">
               <p>
-                The Sellable codebase combines a web chat experience and a phone agent workflow. The current application is built in
-                <strong>Next.js 16</strong> with a PostgreSQL layer on <strong>Supabase</strong>, plus integrations for
-                <strong>VAPI</strong>, <strong>Telnyx</strong>, <strong>Nylas</strong>, and payment infrastructure through <strong>Polar</strong>.
+                The product is intentionally narrow right now. It is built for agents who already know the problem: the inquiry comes in, the callback gets delayed, and the best buyer is already talking to someone else.
               </p>
-              <p>
-                That combination matters because the value is operational, not decorative. Sellable is designed to sit in the middle of listing response:
-                one product that can answer, qualify, message, schedule, and surface context back to the agent.
-              </p>
+            </div>
+          </div>
+
+          <div class="overview-grid">
+            <article class="shell-frame overview-card reveal" data-reveal>
+              <div class="shell-core overview-core">
+                <p class="feature-kicker">Solo listing agent</p>
+                <h3>Run tighter follow-up without living inside your phone.</h3>
+                <p>Let Sellable catch the first call, answer routine questions, and keep momentum alive while you stay focused on pricing, showings, and offers.</p>
+              </div>
             </article>
-            <div class="stack-grid">
-              <article class="stack-card">
-                <h3>Web chat agent</h3>
-                <p>Streaming AI workflows for in-app guidance and agent tooling.</p>
-              </article>
-              <article class="stack-card">
-                <h3>Voice agent</h3>
-                <p>Webhook-based phone automation for inbound listing coverage.</p>
-              </article>
-              <article class="stack-card">
-                <h3>Calendar and messaging</h3>
-                <p>Nylas and Telnyx support scheduling and follow-up loops.</p>
-              </article>
-              <article class="stack-card">
-                <h3>Database and billing</h3>
-                <p>Supabase, Drizzle, and Polar keep account and plan logic grounded.</p>
-              </article>
+
+            <article class="shell-frame overview-card reveal" data-reveal>
+              <div class="shell-core overview-core">
+                <p class="feature-kicker">Small team</p>
+                <h3>Cover nights, weekends, and overflow inquiries with one cleaner system.</h3>
+                <p>Keep every listing from going quiet when one agent is busy, offline for a few hours, or buried in active showings.</p>
+              </div>
+            </article>
+
+            <article class="shell-frame overview-card overview-card-wide reveal" data-reveal>
+              <div class="shell-core overview-core overview-quote">
+                <p class="feature-kicker">The shift</p>
+                <h3>You stop treating inbound listing response like random inbox firefighting.</h3>
+                <p>Calls get answered, buyers get screened, and the next step gets clearer before the lead goes cold. That is the point of the system.</p>
+              </div>
+            </article>
+          </div>
+        </section>
+
+        <section class="section section-soft" id="workflow">
+          <div class="section-heading reveal" data-reveal>
+            <span class="eyebrow">Workflow</span>
+            <div class="section-copy">
+              <h2>From inbound lead to booked next step in four clear moves.</h2>
+              <p>The workflow is simple on purpose. Sellable is there to handle the repetitive first-response layer, not force a bloated new operating model onto agents on day one.</p>
+            </div>
+          </div>
+
+          <div class="workflow-list">
+            <article class="workflow-row reveal" data-reveal>
+              <div class="workflow-number">01</div>
+              <div class="shell-frame workflow-card">
+                <div class="shell-core workflow-core">
+                  <h3>Launch one listing into Sellable.</h3>
+                  <p>Set up the listing, tighten the copy, and get the buyer-facing number ready without rebuilding your whole workflow from scratch.</p>
+                </div>
+              </div>
+            </article>
+
+            <article class="workflow-row reveal" data-reveal>
+              <div class="workflow-number">02</div>
+              <div class="shell-frame workflow-card">
+                <div class="shell-core workflow-core">
+                  <h3>Start with the shared line, then add dedicated numbers only where they matter.</h3>
+                  <p>The included AI line covers the default flow first. Dedicated listing numbers stay optional for cleaner routing and clearer attribution.</p>
+                </div>
+              </div>
+            </article>
+
+            <article class="workflow-row reveal" data-reveal>
+              <div class="workflow-number">03</div>
+              <div class="shell-frame workflow-card">
+                <div class="shell-core workflow-core">
+                  <h3>Answer, qualify, and keep momentum moving.</h3>
+                  <p>Sellable handles the immediate back-and-forth, gathers context, and keeps serious buyers engaged instead of letting the lead stall out.</p>
+                </div>
+              </div>
+            </article>
+
+            <article class="workflow-row reveal" data-reveal>
+              <div class="workflow-number">04</div>
+              <div class="shell-frame workflow-card">
+                <div class="shell-core workflow-core">
+                  <h3>Step in strong when human judgment matters.</h3>
+                  <p>Agents focus on showings, negotiation, and decisions with context already captured instead of piecing the conversation together after the fact.</p>
+                </div>
+              </div>
+            </article>
+          </div>
+        </section>
+
+        <section class="section" id="stack">
+          <div class="section-heading reveal" data-reveal>
+            <span class="eyebrow">Technical footprint</span>
+            <div class="section-copy">
+              <h2>The public product and the engineering story live together.</h2>
+              <p>The Sellable codebase combines a web chat experience and a phone agent workflow. The current application is built in Next.js 16 with Supabase, VAPI, Telnyx, Nylas, Drizzle, and Polar.</p>
+            </div>
+          </div>
+
+          <div class="stack-grid">
+            <article class="shell-frame stack-card reveal" data-reveal>
+              <div class="shell-core stack-core">
+                <p class="feature-kicker">Web chat agent</p>
+                <h3>Streaming AI workflows for in-app guidance and agent tooling.</h3>
+              </div>
+            </article>
+
+            <article class="shell-frame stack-card reveal" data-reveal>
+              <div class="shell-core stack-core">
+                <p class="feature-kicker">Voice agent</p>
+                <h3>Webhook-based phone automation for inbound listing coverage.</h3>
+              </div>
+            </article>
+
+            <article class="shell-frame stack-card reveal" data-reveal>
+              <div class="shell-core stack-core">
+                <p class="feature-kicker">Calendar and messaging</p>
+                <h3>Nylas and Telnyx support scheduling and follow-up loops.</h3>
+              </div>
+            </article>
+
+            <article class="shell-frame stack-card reveal" data-reveal>
+              <div class="shell-core stack-core">
+                <p class="feature-kicker">Database and billing</p>
+                <h3>Supabase, Drizzle, and Polar keep account and plan logic grounded.</h3>
+              </div>
+            </article>
+          </div>
+        </section>
+
+        <section class="section section-compact">
+          <div class="shell-frame note-frame reveal" data-reveal>
+            <div class="shell-core note-core">
+              <div class="section-copy">
+                <span class="eyebrow">Why this page exists</span>
+                <h2>A real project deserves a real public profile.</h2>
+                <p>
+                  This page gives GitHub visitors a clean snapshot of what Sellable is, who it is for, and how the product is built. The live application experience lives at <a href="https://sellabl.app/agents" target="_blank" rel="noreferrer">sellabl.app/agents</a>.
+                </p>
+              </div>
             </div>
           </div>
         </section>
 
-        <section class="section note-section">
-          <div class="note-card">
-            <p class="eyebrow">Why this page exists</p>
-            <h2>A real project deserves a real public profile.</h2>
-            <p>
-              Instead of publishing a thin placeholder, this page gives GitHub visitors a useful snapshot of what Sellable is, who it is for, and how the product is built.
-              If you want the full product experience, the live site is at <a href="https://sellabl.app" target="_blank" rel="noreferrer">sellabl.app</a>.
-            </p>
+        <section class="section section-compact" id="faq">
+          <div class="section-heading reveal" data-reveal>
+            <span class="eyebrow">FAQ</span>
+            <div class="section-copy">
+              <h2>Short answers for the obvious questions.</h2>
+            </div>
           </div>
-        </section>
 
-        <section class="section faq-section" id="faq">
-          <div class="section-heading narrow">
-            <p class="eyebrow">FAQ</p>
-            <h2>Short answers for common questions.</h2>
-          </div>
           <div class="faq-list">
-            <details open>
-              <summary>What is Sellable?</summary>
-              <p>Sellable is an AI listing operations platform for real estate agents. It helps agents answer calls and texts, qualify buyers, send follow-up messages, and coordinate showings with less manual work.</p>
+            <details class="shell-frame reveal" data-reveal open>
+              <summary class="shell-core faq-core">What is Sellable?</summary>
+              <div class="faq-body">
+                Sellable is an AI listing operations platform for real estate agents. It helps agents answer calls and texts, qualify buyers, send follow-up messages, and coordinate showings with less manual work.
+              </div>
             </details>
-            <details>
-              <summary>Who is it built for right now?</summary>
-              <p>The current wedge is solo agents and small teams managing active listings. The product is intentionally focused on listing response operations first.</p>
+
+            <details class="shell-frame reveal" data-reveal>
+              <summary class="shell-core faq-core">Who is it built for right now?</summary>
+              <div class="faq-body">
+                The current wedge is solo agents and small teams managing active listings. The product is intentionally focused on listing response operations first.
+              </div>
             </details>
-            <details>
-              <summary>Is this the live app?</summary>
-              <p>No. This is the public GitHub Pages profile for the project. The live application experience lives at <a href="https://sellabl.app/agents" target="_blank" rel="noreferrer">sellabl.app/agents</a>.</p>
-            </details>
-            <details>
-              <summary>Where can I learn more?</summary>
-              <p>You can visit the main site at <a href="https://sellabl.app" target="_blank" rel="noreferrer">sellabl.app</a> or review the public Pages source on <a href="https://github.com/ElironB/ElironB.github.io" target="_blank" rel="noreferrer">GitHub</a>.</p>
+
+            <details class="shell-frame reveal" data-reveal>
+              <summary class="shell-core faq-core">Is this the live app?</summary>
+              <div class="faq-body">
+                No. This is the public GitHub Pages profile for the project. The live application experience lives at <a href="https://sellabl.app/agents" target="_blank" rel="noreferrer">sellabl.app/agents</a>.
+              </div>
             </details>
           </div>
         </section>
       </main>
 
-      <footer class="site-footer">
-        <p>Sellable on GitHub</p>
-        <div class="footer-links">
-          <a href="https://sellabl.app" target="_blank" rel="noreferrer">Main site</a>
-          <a href="https://sellabl.app/agents" target="_blank" rel="noreferrer">Agent product</a>
-          <a href="https://github.com/ElironB/ElironB.github.io" target="_blank" rel="noreferrer">Pages repo</a>
+      <footer class="site-footer reveal" data-reveal>
+        <div class="shell-frame footer-frame">
+          <div class="shell-core footer-core">
+            <p class="footer-mark">Sellable on GitHub</p>
+            <div class="footer-links">
+              <a href="https://sellabl.app" target="_blank" rel="noreferrer">Main site</a>
+              <a href="https://sellabl.app/agents" target="_blank" rel="noreferrer">Agent product</a>
+              <a href="https://github.com/ElironB/ElironB.github.io" target="_blank" rel="noreferrer">Pages repo</a>
+            </div>
+          </div>
         </div>
       </footer>
     </div>
+
+    <script>
+      const observer = new IntersectionObserver(
+        (entries) => {
+          for (const entry of entries) {
+            if (entry.isIntersecting) {
+              entry.target.classList.add("is-visible");
+              observer.unobserve(entry.target);
+            }
+          }
+        },
+        { threshold: 0.18 }
+      );
+
+      document.querySelectorAll("[data-reveal]").forEach((node) => {
+        observer.observe(node);
+      });
+    </script>
   </body>
 </html>
