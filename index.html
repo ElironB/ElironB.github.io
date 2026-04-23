@@ -8,16 +8,10 @@
       name="description"
       content="Sellable helps real estate agents answer listing inquiries faster with AI phone coverage, buyer qualification, SMS follow-up, and showing coordination."
     />
-    <meta name="theme-color" content="#f8f8f6" />
+    <meta name="theme-color" content="#ffffff" />
     <meta name="robots" content="index,follow" />
     <link rel="canonical" href="https://elironb.github.io/" />
     <link rel="icon" href="./favicon.svg" type="image/svg+xml" />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@500;600;700;800&display=swap"
-      rel="stylesheet"
-    />
     <meta property="og:type" content="website" />
     <meta property="og:title" content="Sellable on GitHub" />
     <meta
@@ -38,35 +32,55 @@
         theme: {
           extend: {
             colors: {
-              stone: {
-                25: "#fcfcfa",
-                50: "#f8f8f6",
-                100: "#efefeb",
-                200: "#dfdfd8",
-                500: "#6b6f76",
-                900: "#111318"
-              }
+              background: "hsl(var(--background))",
+              foreground: "hsl(var(--foreground))",
+              card: "hsl(var(--card))",
+              "card-foreground": "hsl(var(--card-foreground))",
+              primary: "hsl(var(--primary))",
+              "primary-foreground": "hsl(var(--primary-foreground))",
+              secondary: "hsl(var(--secondary))",
+              "secondary-foreground": "hsl(var(--secondary-foreground))",
+              muted: "hsl(var(--muted))",
+              "muted-foreground": "hsl(var(--muted-foreground))",
+              accent: "hsl(var(--accent))",
+              "accent-foreground": "hsl(var(--accent-foreground))",
+              border: "hsl(var(--border))",
+              input: "hsl(var(--input))",
+              ring: "hsl(var(--ring))"
             },
             fontFamily: {
-              sans: ['"Plus Jakarta Sans"', "sans-serif"]
-            },
-            boxShadow: {
-              soft: "0 24px 60px rgba(17, 19, 24, 0.06)",
-              card: "0 12px 32px rgba(17, 19, 24, 0.05)"
-            },
-            letterSpacing: {
-              tightest: "-0.08em"
+              sans: ["Arial", "Helvetica", "sans-serif"]
             }
           }
         }
       };
     </script>
     <style>
+      :root {
+        color-scheme: light;
+        --background: 0 0% 100%;
+        --foreground: 222.2 84% 4.9%;
+        --card: 0 0% 100%;
+        --card-foreground: 222.2 84% 4.9%;
+        --primary: 0 0% 0%;
+        --primary-foreground: 210 40% 98%;
+        --secondary: 210 40% 96.1%;
+        --secondary-foreground: 222.2 47.4% 11.2%;
+        --muted: 210 40% 96.1%;
+        --muted-foreground: 215.4 16.3% 46.9%;
+        --accent: 210 40% 96.1%;
+        --accent-foreground: 222.2 47.4% 11.2%;
+        --border: 214.3 31.8% 91.4%;
+        --input: 214.3 31.8% 91.4%;
+        --ring: 0 0% 0%;
+      }
+
       body {
-        font-family: "Plus Jakarta Sans", sans-serif;
-        background:
-          radial-gradient(circle at top right, rgba(17, 19, 24, 0.06), transparent 22%),
-          linear-gradient(180deg, #fcfcfa 0%, #f8f8f6 100%);
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 15px;
+        font-feature-settings:
+          "rlig" 1,
+          "calt" 1;
       }
     </style>
     <script type="application/ld+json">
@@ -91,40 +105,42 @@
       }
     </script>
   </head>
-  <body class="text-stone-900 antialiased">
-    <main class="mx-auto flex min-h-[100dvh] w-full max-w-7xl items-center px-4 py-10 sm:px-6 lg:px-8">
-      <section class="grid w-full gap-8 lg:grid-cols-[minmax(0,1.05fr)_420px] lg:gap-12">
+  <body class="bg-background text-foreground antialiased">
+    <main class="mx-auto flex min-h-[100dvh] w-full max-w-6xl items-center px-4 py-10 md:px-6">
+      <section class="grid w-full gap-8 lg:grid-cols-[minmax(0,1fr)_minmax(320px,420px)] lg:gap-10">
         <div class="flex flex-col justify-center">
-          <div class="mb-8 flex items-center justify-between gap-4">
+          <div class="mb-10 flex items-center justify-between gap-4">
             <a
               href="https://sellabl.app"
               target="_blank"
               rel="noreferrer"
-              class="inline-flex items-center gap-3 rounded-full border border-stone-200 bg-white/80 px-3 py-2 shadow-card backdrop-blur"
+              class="inline-flex items-center gap-1.5"
             >
               <img src="./sellable.png" alt="Sellable" width="42" height="42" class="h-10 w-auto" />
-              <span class="text-lg font-bold tracking-tight">Sellable</span>
+              <span class="bg-[linear-gradient(110deg,hsl(var(--foreground)),45%,hsl(var(--muted-foreground)),55%,hsl(var(--foreground)))] bg-[length:250%_100%] bg-clip-text text-2xl font-semibold text-transparent">
+                Sellable
+              </span>
             </a>
 
             <a
               href="https://github.com/ElironB/ElironB.github.io"
               target="_blank"
               rel="noreferrer"
-              class="hidden rounded-full border border-stone-200 bg-white/80 px-4 py-2 text-sm font-semibold text-stone-500 shadow-card backdrop-blur transition hover:text-stone-900 sm:inline-flex"
+              class="hidden h-10 items-center rounded-md border border-input bg-background px-4 text-sm font-medium text-foreground transition-colors hover:bg-accent hover:text-accent-foreground sm:inline-flex"
             >
               GitHub Pages repo
             </a>
           </div>
 
-          <span class="mb-5 inline-flex w-fit rounded-full border border-stone-200 bg-white/70 px-3 py-1 text-[11px] font-semibold uppercase tracking-[0.22em] text-stone-500">
+          <span class="mb-5 inline-flex w-fit items-center rounded-full border border-primary/30 bg-primary/10 px-3 py-1 text-xs font-medium text-primary">
             Sellable for listing agents
           </span>
 
-          <h1 class="max-w-[10ch] text-5xl font-extrabold leading-[0.9] tracking-tightest text-stone-900 sm:text-6xl lg:text-[6.5rem]">
+          <h1 class="max-w-[10ch] text-4xl font-bold tracking-tighter text-foreground sm:text-5xl lg:text-6xl">
             Stop losing listing leads to slow follow-up.
           </h1>
 
-          <p class="mt-6 max-w-2xl text-base leading-8 text-stone-500 sm:text-lg">
+          <p class="mt-6 max-w-[58ch] text-base leading-8 text-muted-foreground">
             Sellable gives every listing instant phone coverage, fast buyer qualification, and a cleaner operating layer so agents spend time on the right inquiries instead of piecing stale conversations back together.
           </p>
 
@@ -133,50 +149,69 @@
               href="https://sellabl.app/agents"
               target="_blank"
               rel="noreferrer"
-              class="inline-flex items-center justify-center gap-3 rounded-full bg-stone-900 px-6 py-3.5 text-sm font-semibold text-white shadow-soft transition hover:-translate-y-0.5"
+              class="inline-flex h-11 items-center justify-center rounded-md bg-primary px-8 text-sm font-medium text-primary-foreground transition-colors hover:bg-primary/90"
             >
-              <span>Start Agent Setup</span>
-              <span class="inline-flex h-8 w-8 items-center justify-center rounded-full bg-white/10 text-base">↗</span>
+              Start Agent Setup
             </a>
 
             <a
               href="https://sellabl.app"
               target="_blank"
               rel="noreferrer"
-              class="inline-flex items-center justify-center rounded-full border border-stone-200 bg-white px-6 py-3.5 text-sm font-semibold text-stone-900 shadow-card transition hover:-translate-y-0.5"
+              class="inline-flex h-11 items-center justify-center rounded-md border border-input bg-background px-8 text-sm font-medium text-foreground transition-colors hover:bg-accent hover:text-accent-foreground"
             >
               Visit sellabl.app
             </a>
           </div>
+
+          <div class="mt-8 grid gap-3 text-sm text-muted-foreground sm:max-w-xl">
+            <div class="rounded-xl border border-border bg-muted/50 px-4 py-3 shadow-sm">
+              24/7 AI phone coverage for active listings
+            </div>
+            <div class="rounded-xl border border-border bg-muted/50 px-4 py-3 shadow-sm">
+              Shared AI line included in Agent Pro
+            </div>
+            <div class="rounded-xl border border-border bg-muted/50 px-4 py-3 shadow-sm">
+              Brokerage rollout available when teams are ready
+            </div>
+          </div>
         </div>
 
         <aside class="flex items-center">
-          <div class="w-full rounded-[2rem] border border-stone-200 bg-white/85 p-6 shadow-soft backdrop-blur sm:p-8">
-            <span class="inline-flex rounded-full border border-stone-200 bg-stone-50 px-3 py-1 text-[11px] font-semibold uppercase tracking-[0.22em] text-stone-500">
-              Current wedge
-            </span>
+          <div class="bg-card text-card-foreground flex w-full flex-col gap-6 rounded-xl border border-border py-6 shadow-sm">
+            <div class="px-6">
+              <span class="inline-flex rounded-full border border-border bg-background px-3 py-1 text-xs font-medium text-muted-foreground">
+                Current wedge
+              </span>
+            </div>
 
-            <h2 class="mt-5 max-w-[12ch] text-3xl font-bold leading-tight tracking-[-0.05em] text-stone-900 sm:text-[2.2rem]">
-              Listing response operations for solo agents and lean teams.
-            </h2>
+            <div class="px-6">
+              <h2 class="max-w-[12ch] text-3xl font-semibold leading-tight tracking-tight text-foreground">
+                Listing response operations for solo agents and lean teams.
+              </h2>
+            </div>
 
-            <p class="mt-5 text-base leading-8 text-stone-500">
-              Sellable is built for the first-response layer around active listings: phone, text, buyer qualification, scheduling coordination, and visibility that keeps the handoff clean.
-            </p>
+            <div class="px-6">
+              <p class="text-sm leading-7 text-muted-foreground">
+                Sellable is built for the first-response layer around active listings: phone, text, buyer qualification, scheduling coordination, and visibility that keeps the handoff clean.
+              </p>
+            </div>
 
-            <div class="mt-8 space-y-4 border-t border-stone-100 pt-6">
-              <div>
-                <p class="text-[11px] font-semibold uppercase tracking-[0.22em] text-stone-500">Always on</p>
-                <p class="mt-2 text-base font-semibold tracking-tight text-stone-900">
-                  Answer calls and texts without leaving buyers waiting.
-                </p>
-              </div>
+            <div class="border-t border-border px-6 pt-6">
+              <div class="space-y-5">
+                <div>
+                  <p class="text-xs font-medium uppercase tracking-wide text-muted-foreground">Always on</p>
+                  <p class="mt-2 text-base font-semibold leading-6 text-foreground">
+                    Answer calls and texts without leaving buyers waiting.
+                  </p>
+                </div>
 
-              <div>
-                <p class="text-[11px] font-semibold uppercase tracking-[0.22em] text-stone-500">Agent Pro</p>
-                <p class="mt-2 text-base font-semibold tracking-tight text-stone-900">
-                  One shared AI line is included, with optional dedicated listing numbers at $29/mo when cleaner routing matters.
-                </p>
+                <div>
+                  <p class="text-xs font-medium uppercase tracking-wide text-muted-foreground">Agent Pro</p>
+                  <p class="mt-2 text-base font-semibold leading-6 text-foreground">
+                    One shared AI line is included, with optional dedicated listing numbers at $29/mo when cleaner routing matters.
+                  </p>
+                </div>
               </div>
             </div>
           </div>
